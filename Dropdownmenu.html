@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        .dropbtn{
+            background-color:green;
+            color: black;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+            text-align: center;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: whitesmoke;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px;
+            z-index: 1;
+        }
+        .dropdown-content a{
+            display: block;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+        }
+        .dropdown-content a:hover{
+            background-color: gold;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        .dropdown:hover .dropbtn{
+            background-color: white;
+        }
+        
+    </style>
+</head>
+<body>
+   
+    <div class="dropdown">
+        <button class="dropbtn">Wordpress</button>
+        <div class="dropdown-content">
+            <a href="#">Websites & Online Stores</a>
+            <a href="#">WordPress Hosting</a>
+            <a href="#">WooCommerce</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Hosting</button>
+        <div class="dropdown-content">
+            <a href="#">Sharing Hosting</a>
+            <a href="#">Dedicated Hosting</a>
+            <a href="#">VPS Hosting</a>
+        </div>
+    </div>
+</body>
+</html>

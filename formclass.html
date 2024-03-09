@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+        background: blue;
+    }
+    h1{
+        color: goldenrod;
+        text-align: center;
+        font-style: italic;
+        font-size: 30px;
+        font-family: fantasy;
+    }
+    p{
+        color: whitesmoke;
+        font-style: normal;
+        text-align:left;
+        font-size: 25px;
+    }
+    form{
+        background: gold;
+        text-align: left;
+        font-size: 30;
+    }
+    </style>
+</head>
+<body>
+    <h1>Welcome to DivineTouch Integrated Service</h1>
+    <hr>
+    <p>Register with us today.</p><br>
+    <form>
+        <label>Name</label><br>
+        <input type="text" placeholder="Enter Name" required><br><br>
+
+        <label>Email</label><br>
+        <input type="email" placeholder="Enter Email"><br><br>
+
+        <label>Password</label><br>
+        <input type="password" placeholder="Enter password" required maxlength="10" minlength="8"><br><br>
+
+        <label>Gender</label><br>
+        <input type="radio" name="gender" checked>male<br>
+        <input type="radio" name="gender">Female<br>
+        <input type="radio" name="gender">other<br>
+
+        <label>upload Document</label><br>
+        <input type="file" required><br><br>
+
+        <label>Date of Birth</label><br>
+        <input type="date" required><br><br>
+
+        <label>State of origin</label><br>
+        <select>
+            <option value="Anambera">Anambera</option><br>
+            <option value="Abia">Abia</option><br>
+            <option value="Ebony">Ebony</option><br>
+            <option value="Enugu">Enugu</option><br>
+            <option value="Imo">Imo</option><br>
+            <option value="River">River</option><br>
+        </select><br><br>
+
+        <textarea cols="40" rows="6" placeholder="message"></textarea><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>

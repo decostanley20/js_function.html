@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: brown;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick="play()">play</button>
+        <button onclick="pause()">pause</button>
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+
+        <video id="Video1" width="400px" height="300px" controls>
+            <source src="C:\Users\HP\Desktop\pic.html\bia.MP4">
+        </video>
+    </div>
+
+    <script>
+        myVideo = document.getElementById("Video1")
+
+        function play() {
+            if (myVideo.paused)
+            myVideo.play()
+        }
+
+        function pause() {
+            if (myVideo.played)
+            myVideo.pause()
+        }
+        function makeBig() {
+            myVideo.width = 700
+            myVideo.height =400
+        }
+
+        function makeSmall() {
+            myVideo.width =200
+        }
+
+        function makeNormal() {
+            myVideo.width = 400
+        }
+
+    </script>
+    
+</body>
+</html>

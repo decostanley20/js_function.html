@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        button{
+            background-color: blue;
+            color: gold;
+            top: 80px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1>this is my media</h1>
+    <button onclick="play()">play</button>
+    <button onclick="pause()">pause</button>
+    <button onclick="download()">Download</button>
+    <audio id="Audio1" width="200px" height="150px" controls>
+        <source src="C:/Users/HP/Desktop/media.html/Don Dada.Mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+<script>
+    myAudio = document.getElementById("Audio1")
+
+    function play() {
+        if (myAudio.paused)
+        myAudio.play()
+    }
+    function pause() {
+        if (myAudio.played)
+        myAudio.pause()
+    }
+    function download() {
+        if (myAudio.played)
+        myAudio.download()
+    }
+</script>
+</body>
+</html>

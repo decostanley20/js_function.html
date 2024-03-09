@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="displayDate()">click to see the current Date</button>
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+
+    <script>
+        function displayDate(){
+            document.getElementById("demo").innerHTML = Date()
+        }
+        //javascript with var
+        var d = new Date();
+        document.getElementById("demo2").innerHTML = d;
+
+        var a = new Date(2022, 7,20);
+        document.getElementById("demo3")
+    </script>
+    
+    
+</body>
+</html>
